@@ -17,13 +17,14 @@ class Posts extends React.Component {
             clicked: null,
             loged: false,
             days: Math.floor(Math.random() * 10 + 1),
-            profile: JSON.parse(localStorage.getItem('user'))
+            profile: JSON.parse(localStorage.getItem('user')),
+            key: 86
         }
     }
 
     componentDidMount() {
         axios.get(`https://jsonplaceholder.typicode.com/photos`).then((res) => {
-            const posts = res.data.slice(65, 105);
+            const posts = res.data.slice(47, 105);
             this.setState({ posts });
         });
         axios.get(`https://jsonplaceholder.typicode.com/posts`).then((res) => {
@@ -55,6 +56,7 @@ class Posts extends React.Component {
             .put("https://jsonplaceholder.typicode.com/posts/1", add)
             .then((res) => {
                 const pst = {
+                    id: this.state.key,
                     title: this.state.body
                 };
                 console.log(this.state.body);
@@ -62,6 +64,9 @@ class Posts extends React.Component {
                 console.log(comment);
                 this.setState({ comment });
             });
+        this.setState(prevState => ({
+            key: prevState.key + 1,
+        }))
     };
 
     handleProfile = () => {
@@ -92,9 +97,9 @@ class Posts extends React.Component {
                                         onClick={this.viewComments(Posts.id)}
                                     ></i>
                                     <i className="fa-regular fa-paper-plane post-react"></i>
-                                    <i class="fa-regular fa-bookmark post-react d-flex "></i>
+                                    <i className="fa-regular fa-bookmark post-react d-flex "></i>
                                 </div>
-                                <div className=" post-element"> {Posts.title} </div>
+                                <div className="captions post-element"> {Posts.title} </div>
                                 <div className="view-comment post-element" onClick={this.viewComments(Posts.id)}>
                                     View all {this.state.comments.length} comments
                                     {/* <br /> */}
@@ -103,7 +108,7 @@ class Posts extends React.Component {
                                     className="comment-btn btn btn-light"
                                     onClick={this.viewComments(Posts.id)}
                                 >
-                                 Comments <i class="fa-solid fa-comments"></i>
+                                 Comments <i className="fa-solid fa-comments"></i>
                                     
 
                                 </button> */}
@@ -115,11 +120,11 @@ class Posts extends React.Component {
                                         <ul className="comment-list">
                                             {this.state.comments.map((comments) => (
                                                 <li className="each-comment">
-                                                    <div className="user-div"><i class="fa-solid fa-user-large"></i></div>
+                                                    <div className="user-div"><i className="fa-solid fa-user-large"></i></div>
                                                     {comments.title} <br />
                                                 </li>
                                             ))}
-                                            <li className="each-comment add-comment">
+                                            <li className="add-comment">
                                                 <label>
                                                     <input
                                                         type="text"
@@ -128,8 +133,8 @@ class Posts extends React.Component {
                                                         onChange={this.handleChange}>
                                                     </input>
                                                 </label>
-                                                <button class="btn btn-light" onClick={this.addComment}>
-                                                    <i class="fa-solid fa-location-arrow"></i>
+                                                <button className="btn btn-light" onClick={this.addComment}>
+                                                    <i className="fa-solid fa-location-arrow"></i>
                                                 </button>
                                             </li>
                                         </ul>

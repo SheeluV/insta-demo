@@ -1,12 +1,30 @@
+.navbar{
+    position: fixed;
+    z-index: 1;
+    box-shadow: 1px 1px lightgray;
+    width: 100%;
+}
+
+.nav-div{
+    margin-right: 300px;
+    font-size: 25px;
+    align-items: center;
+}
+
+.nav-div i{
+    margin: 0 20px;
+}
+
 .navbar-brand{
     font-family: 'Cookie', cursive;
     font-size: 35px;
     font-weight: bold;
-    margin-left: 400px;
+    padding: 0;
+    margin-left: 350px;
 }
 
 .log-btn{
-    margin-right: 400px;
+    margin-left: 10px;
 }
 
 

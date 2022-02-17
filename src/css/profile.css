@@ -1,4 +1,5 @@
 #home-div {
+  margin-top: 60px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -10,12 +11,16 @@
   height: 400px;
   float: right;
   margin: 20px;
+  right: 360px;
+  position: fixed;
+  /* border: solid 1px lightgray; */
+  padding: 5px;
   /* box-shadow: 2px 3px lightgray; */
 }
 
 .profile-head {
   margin-top: 10px;
-  width: max-content;
+  width: 260px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -31,6 +36,18 @@
   border-radius: 100%;
   margin: 5px;
   float: left;
+}
+
+.suggestion-div{
+  height: 500px;
+  text-align: left;
+  /* overflow-y: scroll; */
+  /* scrollbar-width: none; */
+}
+
+.suggestion-div span{
+  font-size: 20px;
+  color: rgb(134, 134, 134);
 }
 
 .user-img {
@@ -56,3 +73,53 @@ h6.user-mail{
 span.user-mail{
 font-size: 10px;
 }
+
+.sug-img{
+  width: 40px;
+  float: left;
+}
+
+.sug-name{
+  
+  width: 180px;
+  float: right;
+  text-align: left;
+  /* display: flex; */
+  margin: 0 10px;
+  align-items: center;
+}
+
+.sug-name div{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sug-mail{
+  
+  margin: 0;
+}
+
+span.sug-mail{
+  
+  font-size: small;
+}
+
+.userimg-sug{
+  /* float: left; */
+}
+
+.profile-sug{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
