@@ -18,6 +18,7 @@ export class navbar extends Component {
     if (window.confirm("You won't be able to see the comments if logged out")) {
       localStorage.removeItem('user')
       this.setState({ button: JSON.parse(localStorage.getItem('user')) })
+      this.props.handleProfile();
     }
     
   }
