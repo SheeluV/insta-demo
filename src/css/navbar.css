@@ -1,0 +1,23 @@
+.navbar-brand{
+    font-family: 'Cookie', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 400px;
+}
+
+.log-btn{
+    margin-right: 400px;
+}
+
+
+.btn-light:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn:focus {
+    box-shadow: none !important; 
+}
+
+
+
