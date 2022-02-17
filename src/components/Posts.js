@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios";
-import '../css/Posts.css';
 import Navbar from "./navbar";
+import Profile from "./profile";
+import '../css/Posts.css';
+import '../css/profile.css';
 
 class Posts extends React.Component {
 
@@ -20,7 +22,7 @@ class Posts extends React.Component {
 
     componentDidMount() {
         axios.get(`https://jsonplaceholder.typicode.com/photos`).then((res) => {
-            const posts = res.data.slice(65, 95);
+            const posts = res.data.slice(65, 105);
             this.setState({ posts });
         });
         axios.get(`https://jsonplaceholder.typicode.com/posts`).then((res) => {
@@ -65,9 +67,11 @@ class Posts extends React.Component {
     render() {
         return (
             <div>
-                <Navbar loged={this.props.loged} handleLoged={this.props.handleLoged} />
+            <Navbar loged={this.props.loged} handleLoged={this.props.handleLoged} />
+                <div id="home-div">
+                <Profile />
 
-                <ul>
+                <ul id="posts-list">
                     {this.state.posts.map((Posts) => (
                         <li className="posts">
                             <div className="head post-element">
@@ -128,6 +132,7 @@ class Posts extends React.Component {
                         </li>
                     ))}
                 </ul>
+            </div>
             </div>
         );
     }

@@ -15,8 +15,11 @@ export class navbar extends Component {
 
   handleLogout = (e) => {
     e.preventDefault();
-    localStorage.removeItem('user')
-    this.setState({ button: JSON.parse(localStorage.getItem('user')) })
+    if (window.confirm("You won't be able to see the comments if logged out")) {
+      localStorage.removeItem('user')
+      this.setState({ button: JSON.parse(localStorage.getItem('user')) })
+    }
+    
   }
 
   handleLogin = (e) => {
