@@ -17,10 +17,13 @@
 
 .navbar-brand{
     font-family: 'Cookie', cursive;
+    /* font-style: italic; */
+    letter-spacing: 3px;
+    /* font-family: 'Marck Script', cursive; */
     font-size: 35px;
     font-weight: bold;
     padding: 0;
-    margin-left: 350px;
+    margin-left: 300px;
 }
 
 .log-btn{
