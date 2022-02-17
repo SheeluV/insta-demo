@@ -32,7 +32,7 @@
   height: 420px;
 }
 
-.head{
+.head {
   width: auto;
   height: 50px;
   /* border: solid 1px; */
@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-.thumbnail{
+.thumbnail {
   margin: 5px;
   border-radius: 100%;
   /* border: solid 2px; */
@@ -50,55 +50,55 @@
   width: 40px;
 }
 
-.author{
+.author {
   /* border: solid 2px; */
   width: max-content;
   height: 30px;
   margin-left: 10px;
 }
 
-.post-element{
+.post-element {
   text-align: left;
   margin: auto;
 }
 
-.comment-btn{
+.comment-btn {
   padding: 0;
   text-align: left;
   color: gray;
 }
 
-.post-react{
+.post-react {
   margin: 0 5px;
   font-size: 25px;
   cursor: pointer;
 }
 
-.post-react:hover{
+.post-react:hover {
   color: gray;
 }
 
-.fa-heart.post-react:hover{
+.fa-heart.post-react:hover {
   color: rgb(255, 0, 76);
 }
 
-.fa-bookmark.post-react{
+.fa-bookmark.post-react {
   float: right;
   position: absolute;
   right: 0;
   margin-right: 20px;
 }
 
-.view-comment{
+.view-comment {
   color: gray;
   cursor: pointer;
 }
 
-.fa-user-large{
+.fa-user-large {
   margin: 0 5px;
 }
 
-.user-div{
+.user-div {
   width: fit-content;
   border: solid 2px;
   border-radius: 100%;
@@ -106,4 +106,19 @@
   margin: 0 5px;
 }
 
+.add-comment {
+  display: flex;
+  height: 40px;
+  width: inherit;
+  justify-content: center;
+}
 
+.add-comment button {
+  height: inherit;
+  border: solid 1px gray;
+}
+
+.add-comment input {
+  height: 40px;
+  width: 350px;
+}

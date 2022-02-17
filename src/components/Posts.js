@@ -47,10 +47,8 @@ class Posts extends React.Component {
 
     addComment = (event) => {
         event.preventDefault();
-
         const add = {};
-
-        axios
+            axios
             .put("https://jsonplaceholder.typicode.com/posts/1", add)
             .then((res) => {
                 const pst = {
@@ -112,9 +110,14 @@ class Posts extends React.Component {
                                                 {comments.title} <br />
                                             </li>
                                         ))}
-                                        <li className="each-comment">
+                                        <li className="each-comment add-comment">
                                             <label>
-                                                <input type="text" name="Comment" placeholder="Add comment" onChange={this.handleChange} />
+                                                <input
+                                                    type="text"
+                                                    name="Comment"
+                                                    placeholder="Add comment"
+                                                    onChange={this.handleChange}>
+                                                </input>
                                             </label>
                                             <button class="btn btn-light" onClick={this.addComment}>
                                                 <i class="fa-solid fa-location-arrow"></i>
