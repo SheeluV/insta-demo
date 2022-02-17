@@ -106,10 +106,6 @@ span.sug-mail{
   font-size: small;
 }
 
-.userimg-sug{
-  /* float: left; */
-}
-
 .profile-sug{
   display: flex;
   align-items: center;
