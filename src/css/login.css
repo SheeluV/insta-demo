@@ -1,50 +1,58 @@
-.main-login{
-    background: #4e54c8;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.main-login {
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#login-form{
-    width: 35%;
-    padding: 40px;
-    border: 2px solid lightgray;
-    /* background-color: #F5FDFF; */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+#login-form {
+  width: 35%;
+  padding: 40px;
+  border: 2px solid lightgray;
+  /* background-color: #F5FDFF; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#login-page{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 80px;
+#login-page {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 80px;
 }
 
-.mb-3{
-    display: flex;
-    flex-direction: column;
+.mb-3 {
+  display: flex;
+  flex-direction: column;
 }
 
-.login-heading{
-    margin-bottom: 20px;
+.login-heading {
+  margin-bottom: 20px;
 }
 
-.form-label{
-    text-align: left;
+.form-label {
+  text-align: left;
 }

@@ -77,7 +77,7 @@ class Posts extends React.Component {
     render() {
         return (
             <div>
-                <Navbar loged={this.props.loged} handleLoged={this.props.handleLoged} handleProfile={this.handleProfile}/>
+                <Navbar loged={this.props.loged} handleLoged={this.props.handleLoged} handleProfile={this.handleProfile} />
                 <div id="home-div">
                     <Profile user={this.state.profile} />
 
@@ -102,16 +102,6 @@ class Posts extends React.Component {
                                 <div className="captions post-element"> {Posts.title} </div>
                                 <div className="view-comment post-element" onClick={this.viewComments(Posts.id)}>
                                     View all {this.state.comments.length} comments
-                                    {/* <br /> */}
-
-                                    {/* <button
-                                    className="comment-btn btn btn-light"
-                                    onClick={this.viewComments(Posts.id)}
-                                >
-                                 Comments <i className="fa-solid fa-comments"></i>
-                                    
-
-                                </button> */}
                                 </div>
                                 <div className="view-comment post-element">
                                     {this.state.days} days ago </div>

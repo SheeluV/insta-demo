@@ -37,37 +37,29 @@ export class profile extends Component {
                     </div>
                 </div>
                 {(user) ?
-                <>
-                <hr />
-                <div className='suggestion-div'>
-                <span>Suggestions for you</span>
-                {this.state.users.map((user) => (
-                    <div className='profile-sug'>
-                    <div className='userimg-sug'>
-                        <img className='sug-img' src='https://t4.ftcdn.net/jpg/03/32/59/65/240_F_332596535_lAdLhf6KzbW6PWXBWeIFTovTii1drkbT.jpg' />
-                    </div>
-                    <div className='sug-name'>
-                            <div>
-                                <h6 className='sug-mail'>{user.name}</h6>
-                                <span className='sug-mail'>{user.username}</span>
-                            </div>
-                    </div>
-                    <i class="fa-solid fa-user-plus"></i>
-                </div>
-                ))}
-                </div>
-                
-                
-                </>
-                :
-            <></>
-            }
-
-
-
-
-
-                
+                    <>
+                        <hr />
+                        <div className='suggestion-div'>
+                            <span>Suggestions for you</span>
+                            {this.state.users.map((user) => (
+                                <div className='profile-sug'>
+                                    <div className='userimg-sug'>
+                                        <img className='sug-img' src='https://t4.ftcdn.net/jpg/03/32/59/65/240_F_332596535_lAdLhf6KzbW6PWXBWeIFTovTii1drkbT.jpg' />
+                                    </div>
+                                    <div className='sug-name'>
+                                        <div>
+                                            <h6 className='sug-mail'>{user.name}</h6>
+                                            <span className='sug-mail'>{user.username}</span>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-user-plus"></i>
+                                </div>
+                            ))}
+                        </div>
+                    </>
+                    :
+                    <></>
+                }
             </div>
         )
     }

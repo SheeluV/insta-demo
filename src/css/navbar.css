@@ -1,44 +1,38 @@
-.navbar{
-    position: fixed;
-    z-index: 1;
-    box-shadow: 1px 1px lightgray;
-    width: 100%;
+.navbar {
+  position: fixed;
+  z-index: 1;
+  box-shadow: 1px 1px lightgray;
+  width: 100%;
 }
 
-.nav-div{
-    margin-right: 300px;
-    font-size: 25px;
-    align-items: center;
+.nav-div {
+  margin-right: 300px;
+  font-size: 25px;
+  align-items: center;
 }
 
-.nav-div i{
-    margin: 0 20px;
+.nav-div i {
+  margin: 0 20px;
 }
 
-.navbar-brand{
-    font-family: 'Cookie', cursive;
-    /* font-style: italic; */
-    letter-spacing: 3px;
-    /* font-family: 'Marck Script', cursive; */
-    font-size: 35px;
-    font-weight: bold;
-    padding: 0;
-    margin-left: 300px;
+.navbar-brand {
+  font-family: "Cookie", cursive;
+  letter-spacing: 3px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0;
+  margin-left: 300px;
 }
 
-.log-btn{
-    margin-left: 10px;
+.log-btn {
+  margin-left: 10px;
 }
-
 
 .btn-light:focus {
-    border: none !important;
-    box-shadow: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .btn:focus {
-    box-shadow: none !important; 
+  box-shadow: none !important;
 }
-
-
-

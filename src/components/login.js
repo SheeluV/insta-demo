@@ -17,11 +17,9 @@ export class login extends Component {
 
     }
 
-
     onSubmit = (e) => {
         e.preventDefault();
-        if(localStorage.getItem('user'))
-        {
+        if (localStorage.getItem('user')) {
             this.props.handleLoged()
         }
     }
@@ -43,7 +41,6 @@ export class login extends Component {
         localStorage.setItem('user', JSON.stringify(nextState));
     }
 
-
     render() {
         return (
             <div className='main-login'>
@@ -57,7 +54,7 @@ export class login extends Component {
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address: </Form.Label>
                             <Form.Control type="email" placeholder="Enter email" value={this.state.email} onChange={this.onChangeEmail} />
-                           
+
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">

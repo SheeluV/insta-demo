@@ -1,9 +1,9 @@
-#posts-list{
+#posts-list {
   width: 520px;
   margin-right: 350px;
 }
 
-#home-page{
+#home-page {
   display: flex;
   flex-direction: column;
 }
@@ -46,7 +46,6 @@
 .head {
   width: auto;
   height: 50px;
-  /* border: solid 1px; */
   margin-bottom: 10px !important;
   display: flex;
   justify-content: flex-start;
@@ -56,13 +55,11 @@
 .thumbnail {
   margin: 5px;
   border-radius: 100%;
-  /* border: solid 2px; */
   height: 40px;
   width: 40px;
 }
 
 .author {
-  /* border: solid 2px; */
   width: max-content;
   height: 30px;
   margin-left: 10px;
@@ -73,7 +70,7 @@
   margin: auto;
 }
 
-.post-element.captions{
+.post-element.captions {
   width: 420px;
 }
 
